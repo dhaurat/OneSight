@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="vertical_left_margin">0.15</dimen>
+    <dimen name="vertical_center_left">0.40</dimen>
+    <dimen name="vertical_center_right">0.60</dimen>
+    <dimen name="vertical_right_margin">0.85</dimen>
+    <dimen name="horizontal_top_margin">0.1</dimen>
+    <dimen name="horizontal_image_bottom">0.6</dimen>
+    <dimen name="horizontal_buttons_top">0.75</dimen>
+    <dimen name="horizontal_bottom_margin">0.9</dimen>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.onesight.uqac.onesight.controller.SexActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/night_background_opacity"
+        tools:ignore="ContentDescription" />
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.onesight.uqac.onesight.controller.SexActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_button"
+        android:fontFamily="cursive"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_am"
+        android:textSize="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"/>
+    <RadioGroup
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/sex_man"
+            android:layout_width="wrap_content"
+            android:text="@string/man"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+        <RadioButton
+            android:id="@+id/sex_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woman"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_look_for"
+        android:textSize="20sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"/>
+    <RadioGroup
+        android:id="@+id/orientation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/searched_sex_man"
+            android:layout_width="wrap_content"
+            android:text="@string/man"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+        <RadioButton
+            android:id="@+id/searched_sex_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woman"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+        <RadioButton
+            android:id="@+id/searched_sex_both"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/both"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/validate_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/validate"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>

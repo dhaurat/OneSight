@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.onesight.uqac.onesight.controller.HomepageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/night_background_opacity80"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        tools:context="com.onesight.uqac.onesight_demo.MainActivity">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="#BBCCCCCC"
+            android:padding="3dp"
+            android:layout_marginTop="?attr/actionBarSize"/>
+
+        <ImageView
+            android:contentDescription="@string/background"
+            android:id="@+id/profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/circle"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="80sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/onesight"
+            />
+
+        <!--<TextView
+            android:id="@+id/sex_preferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="#BBCCCCCC"
+            android:padding="3dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="#BBCCCCCC"
+            android:padding="3dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="#BBCCCCCC"
+            android:padding="3dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/last_update_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="#BBCCCCCC"
+            android:padding="3dp"
+            android:visibility="invisible"/>-->
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="80sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            />-->
+
+        <Button
+            android:id="@+id/connect_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/unable_app"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/account_params"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/account_params"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/profile_params"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/profile_params"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</RelativeLayout>

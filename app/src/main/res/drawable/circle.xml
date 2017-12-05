@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" >
+    <gradient android:startColor="#FFFF0000" android:endColor="#80FF00FF"
+        android:angle="270"/>
+</shape>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="oval">
+        <solid android:color="#FFFFFFFF"/>
+    </shape>
+</item>
+<item
+    android:drawable="@drawable/onesight_circle"/>
+</layer-list>

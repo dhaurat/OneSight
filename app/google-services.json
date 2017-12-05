@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "885076878648",
+    "firebase_url": "https://uqac-onesight.firebaseio.com",
+    "project_id": "uqac-onesight",
+    "storage_bucket": "uqac-onesight.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885076878648:android:4c1194ed76a31ac0",
+        "android_client_info": {
+          "package_name": "com.onesight.uqac.onesight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885076878648-vmb7cp6e2gd0csgp881t1q6em6epcdd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onesight.uqac.onesight",
+            "certificate_hash": "12ffbd736e9144de4f813993c3246dfad3109175"
+          }
+        },
+        {
+          "client_id": "885076878648-u18544323vfnd90mjbuh4hap6j7crrg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxKMv_co-Tk294u7mcwOEbK7HM-PgwNJ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885076878648-u18544323vfnd90mjbuh4hap6j7crrg8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/night_background_opacity"
+    tools:context="com.onesight.uqac.onesight.controller.MatchActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/vertical_left_margin"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/vertical_center_left"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/vertical_center_right"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/vertical_right_margin"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/horizontal_top_margin"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/horizontal_image_bottom"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/horizontal_buttons_top"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/horizontal_bottom_margin"
+        />
+
+    <ImageView
+        android:id="@+id/match_picture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_guideline_1"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_2"
+        app:layout_constraintLeft_toRightOf="@id/vertical_guideline_1"
+        app:layout_constraintRight_toLeftOf="@id/vertical_guideline_4"
+        android:contentDescription="@string/match_picture"
+        android:src="@drawable/circle"
+        />
+
+    <TextView
+        android:id="@+id/match_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:text="@string/unknown"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline_2"
+        />
+    <ImageView
+        android:id="@+id/refuse_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_guideline_3"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_4"
+        app:layout_constraintLeft_toRightOf="@id/vertical_guideline_1"
+        app:layout_constraintRight_toLeftOf="@id/vertical_guideline_2"
+        android:contentDescription="@string/refuse_button"
+        android:background="@drawable/refuse_btn"
+        />
+    <ImageView
+        android:id="@+id/accept_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_guideline_3"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline_4"
+        app:layout_constraintLeft_toRightOf="@id/vertical_guideline_3"
+        app:layout_constraintRight_toLeftOf="@id/vertical_guideline_4"
+        android:contentDescription="@string/accept_button"
+        android:background="@drawable/accept_btn"
+        />
+
+    <ImageView
+        android:id="@+id/waiting_match"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_guideline_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/match_picture"
+        android:paddingTop="20dp"
+        android:src="@drawable/waiting"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/good_match"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_guideline_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/match_picture"
+        android:paddingTop="20dp"
+        android:src="@drawable/match"
+        android:visibility="invisible"
+        />
+
+</android.support.constraint.ConstraintLayout>
